@@ -1,6 +1,6 @@
-<p align="center">
-  <img src="img/bharatvox-india-flag.png" alt="Indian Flag — BharatVox" width="700">
-</p>
+<img src="img/bharatvox-logo.png"
+     alt="BharatVox — Sovereign Speech AI for India"
+     width="900">
 
 <h1 align="center">🇮🇳 BharatVox</h1>
 
