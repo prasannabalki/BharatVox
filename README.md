@@ -154,6 +154,45 @@ The project will investigate learned routing rather than assuming a fixed one-ex
 
 ---
 
+## 🛠️ Technology Stack
+
+BharatVox follows an **open-source-first technology strategy** wherever practical. The initial stack is intentionally simple so the first from-scratch model can be reproduced locally and scaled later.
+
+| Layer | Technology | Purpose |
+|---|---|---|
+| **Operating System** | Linux | Primary development, training and deployment environment |
+| **Programming Language** | Python | Core model, data, training and inference code |
+| **Deep Learning** | PyTorch | Model architecture, training and distributed execution |
+| **Audio / Speech** | torchaudio | Audio loading, transforms, feature extraction and augmentation |
+| **Model Ecosystem** | Hugging Face Transformers | Model interfaces, configuration patterns and interoperability |
+| **Datasets** | Hugging Face Datasets | Dataset loading, processing, streaming and dataset metadata |
+| **Tokenization** | Hugging Face Tokenizers / SentencePiece | Multilingual text tokenization experiments |
+| **Audio Processing** | FFmpeg, SoundFile, librosa | Resampling, conversion, inspection and preprocessing |
+| **Evaluation** | jiwer | WER/CER and ASR evaluation utilities |
+| **Experiment Tracking** | MLflow | Open-source experiment tracking and reproducibility |
+| **Data / Model Versioning** | DVC + Git LFS | Dataset manifests, model artifacts and reproducible versioning |
+| **Configuration** | Hydra / YAML | Reproducible training and experiment configuration |
+| **Containerization** | Docker | Portable training, evaluation and inference environments |
+| **API / Serving** | FastAPI | Lightweight inference and streaming API prototypes |
+| **Model Export** | ONNX / ONNX Runtime | Portable and optimized inference experiments |
+| **Testing** | pytest | Unit and integration testing |
+| **Code Quality** | Ruff / Black / pre-commit | Linting, formatting and repository quality checks |
+| **Data Format** | JSONL / CSV / Parquet | Open, portable manifests and metadata storage |
+| **Visualization** | TensorBoard / Matplotlib | Training diagnostics and evaluation visualization |
+---
+### Future Scaling Stack
+
+As BharatVox grows beyond the initial tiny models, the project may progressively introduce:
+
+- **PyTorch Distributed / DDP** for multi-GPU training
+- **DeepSpeed** for memory-efficient large-model training
+- **Kubernetes** for reproducible distributed training and serving
+- **Apache Arrow / Parquet** for large-scale multilingual dataset pipelines
+- **WebDataset** for efficient sharded audio training
+- **ONNX Runtime** or other open inference runtimes for optimized deployment
+- **Prometheus + Grafana** for inference and streaming observability
+---
+
 ## 🗺️ Roadmap
 
 | Phase | Model / Stage | Target | Objective |
