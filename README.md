@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="img/bharatvox-india-flag.png" alt="Indian Flag — BharatVox" width="700">
+  <img src="img/bharatvox-indian-flag.png" alt="Indian Flag — BharatVox" width="700">
 </p>
 
 <h1 align="center">🇮🇳 BharatVox</h1>
@@ -166,6 +166,37 @@ The project will investigate learned routing rather than assuming a fixed one-ex
 | **5** | **BharatVox-Health** | TBD | Clinical speech and medical-language specialization |
 | **6** | **BharatVox-Stream** | TBD | Real-time doctor–patient speech processing |
 | **7** | Pan-Indian Expansion | Scale-up | Expand to additional Indian languages, dialects and accents |
+
+---
+
+## 📅 First Release Timeline — BharatVox-Tiny v0.1
+
+**Target: 12 weeks from project kickoff**
+
+The first milestone is a reproducible **~5–10M parameter multilingual ASR baseline trained from random initialization** for Hindi, Tamil, Telugu, Malayalam, and Kannada. The goal of v0.1 is to validate the complete BharatVox pipeline rather than claim production-ready clinical performance.
+
+| Timeline | Focus | Expected Deliverable |
+|---|---|---|
+| **Weeks 1–2** | Data discovery & governance | Dataset inventory, licenses, provenance, language/hour statistics and initial train/dev/test plan |
+| **Weeks 3–4** | Data pipeline | Audio cleaning, resampling, segmentation, transcript normalization and multilingual text pipeline |
+| **Weeks 5–6** | Architecture & baseline | Finalize BharatVox-Tiny dense architecture, tokenizer/output units, CTC or equivalent baseline and training configuration |
+| **Weeks 7–8** | From-scratch training | Train initial ~5–10M parameter checkpoints across the five target languages |
+| **Weeks 9–10** | Evaluation & iteration | WER/CER by language, error analysis, code-switching checks, medical-term test set and model improvements |
+| **Week 11** | Streaming prototype | Initial low-latency inference/streaming experiment and RTF/latency measurements |
+| **Week 12** | **v0.1 Release** | Source code, configs, preprocessing/evaluation tools, benchmark report and eligible BharatVox-Tiny checkpoint |
+
+### v0.1 Success Criteria
+
+- End-to-end model trained **from scratch**
+- Hindi, Tamil, Telugu, Malayalam and Kannada represented in the training/evaluation pipeline
+- Reproducible training and evaluation
+- WER and CER reported separately for each language
+- Initial healthcare terminology benchmark
+- Basic streaming inference prototype
+- Dataset provenance and licensing documented
+- Apache-2.0 release of BharatVox-owned code and eligible artifacts
+
+> **v0.1 is a research baseline.** Clinical deployment and clinical decision-making are explicitly outside the scope of the first release.
 
 ---
 
