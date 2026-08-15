@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="bharatvox-india-flag.png" alt="Indian Flag — BharatVox" width="700">
+  <img src="img/bharatvox-india-flag.png" alt="Indian Flag — BharatVox" width="700">
 </p>
 
 <h1 align="center">🇮🇳 BharatVox</h1>
@@ -35,6 +35,7 @@ BharatVox aims to enable **real-time streaming speech recognition and speech und
 | **Scaling Strategy** | Dense → Multilingual → Foundation Model → **Mixture-of-Experts (MoE)** |
 | **Evaluation** | WER, CER, medical-term errors, clinical entity accuracy, code-switch accuracy, latency and RTF |
 | **Open Research** | Reproducible training, benchmarks, architecture and eligible model checkpoints |
+| **License** | **Free & open source — Apache License 2.0; use, modify and redistribute subject to license terms** |
 
 ---
 
@@ -246,6 +247,38 @@ Healthcare speech systems require special attention to clinically significant er
 - Procedures
 
 Healthcare-focused models should therefore be evaluated on clinical information preservation in addition to general ASR accuracy.
+
+---
+
+## 📜 Free & Open-Source Commitment
+
+**BharatVox is intended to be free and open source under the Apache License 2.0.**
+
+The project aims to openly release BharatVox-developed components, including:
+
+- Source code
+- Model architecture and configurations
+- Training and inference pipelines
+- Data preprocessing tools
+- Evaluation and benchmarking tools
+- Documentation and research methodology
+- BharatVox model weights and checkpoints, where the training-data licenses permit redistribution
+
+Under the **Apache License 2.0**, BharatVox-licensed material may be used, copied, modified, redistributed, and used commercially, subject to the license terms, preservation of required notices, and other applicable obligations.
+
+### Open Distribution
+
+The goal is to make BharatVox-developed artifacts freely accessible to researchers, developers, healthcare innovators, startups, universities, public institutions, and the wider open-source community.
+
+Users may build applications, conduct research, modify the software, create derivative works, and redistribute BharatVox-licensed components in accordance with Apache License 2.0.
+
+### Important Dataset & Third-Party Licensing Note
+
+The Apache License 2.0 applies only to material that the BharatVox project has the legal right to release under that license.
+
+**Third-party speech datasets, medical terminologies, libraries, pretrained resources, or other external assets retain their original licenses and usage restrictions.** BharatVox will not relicense third-party material where it does not have the legal right to do so.
+
+Model checkpoints will be released only where the underlying data licenses, privacy requirements, consent conditions, and applicable laws permit distribution.
 
 ---
 
